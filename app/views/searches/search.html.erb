@@ -5,6 +5,7 @@
   <%= submit_tag "Search!" %>
 <% end %>
 <div>
+<<<<<<< HEAD
   <% if @error %>
     <p><%= @error %></p>
   <% elsif @venues %>
@@ -19,3 +20,7 @@
     </ul>
   <% end %>
 </div>
+=======
+  <%= @resp.body if @resp %>
+</div>
+>>>>>>> 3ccd7d3309069163409153045a4904843788c157

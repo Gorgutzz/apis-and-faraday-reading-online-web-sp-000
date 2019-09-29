@@ -10,6 +10,7 @@ class SearchesController < ApplicationController
       req.params['near'] = params[:zipcode]
       req.params['query'] = 'coffee shop'
     end
+<<<<<<< HEAD
 
     body = JSON.parse(@resp.body)
     if @resp.success?
@@ -21,3 +22,7 @@ class SearchesController < ApplicationController
 
   end
 end
+=======
+    render 'search'
+  end
+>>>>>>> 3ccd7d3309069163409153045a4904843788c157
